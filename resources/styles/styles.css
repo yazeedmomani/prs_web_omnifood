@@ -14,6 +14,23 @@ select {
   font: inherit;
 }
 
+html {
+  /* 
+  Description:
+
+  Browser font-size = 16px
+
+  In order to ease the use of rem unit, I will set html font-size to 10px. However, to allow users 
+  to increase and decrease their browser's font-size, I will use percentage instead of px.
+
+  Calculation:
+  10px / 16px = 0.625 = 62.5%
+
+  Now 1 rem = 10px
+  */
+  font-size: 62.5%;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
