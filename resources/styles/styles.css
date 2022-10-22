@@ -62,3 +62,8 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
