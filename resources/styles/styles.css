@@ -168,11 +168,11 @@ body {
   margin-top: 8rem;
 }
 
-.delivered__imgs {
+.delivered__img-container {
   display: flex;
 }
 
-.delivered__imgs img {
+.delivered__img-container img {
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
@@ -180,7 +180,7 @@ body {
   margin-right: -1.6rem;
 }
 
-.delivered__imgs img:last-child {
+.delivered__img-container img:last-child {
   margin: 0;
 }
 
