@@ -67,3 +67,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.hero__img {
+  width: 100%;
+}
