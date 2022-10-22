@@ -134,3 +134,36 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
+
+.delivered {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered__imgs {
+  display: flex;
+}
+
+.delivered__imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  border: 0.3rem solid #fdf2e9;
+  margin-right: -1.6rem;
+}
+
+.delivered__imgs img:last-child {
+  margin: 0;
+}
+
+.delivered__txt {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered__txt span {
+  color: #cf711f;
+  font-weight: 700;
+}
