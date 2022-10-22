@@ -134,6 +134,26 @@ body {
   height: 2.4rem;
 }
 
+.nav__unordered-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 300ms;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  color: #cf711f;
+}
+
 /* **************************** */
 /* Header Hero */
 /* **************************** */
