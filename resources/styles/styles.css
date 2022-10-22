@@ -79,4 +79,6 @@ body {
   font-weight: 700;
   line-height: 1.05;
   color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
 }
