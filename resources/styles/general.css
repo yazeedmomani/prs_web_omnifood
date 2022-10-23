@@ -85,6 +85,10 @@ body {
   padding: 0 3.2rem;
 }
 
+.center-txt {
+  text-align: center;
+}
+
 /* **************************** */
 /* GENERAL REUSABLE COMPONENTS */
 /* **************************** */
