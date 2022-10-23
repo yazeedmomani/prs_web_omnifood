@@ -107,6 +107,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+/* TODO move to helpers */
 .container {
   /* Note: you can also use 140rem which is popular */
   max-width: 120rem;
