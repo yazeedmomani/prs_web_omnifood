@@ -284,6 +284,7 @@
 
         <!-- Main content -->
         <div class="container grid grid--3-cols">
+          <!-- First meal card -->
           <div class="meal__meal">
             <img
               src="resources/images/meals/meal-1.jpg"
@@ -292,7 +293,7 @@
             />
             <div class="meal__content">
               <div class="meal__tag-box">
-                <span class="meal__tag">Vegetarian</span>
+                <span class="meal__tag meal__tag--vegetarian">Vegetarian</span>
               </div>
               <p class="meal__title">Japanese Gyozas</p>
               <ul class="meal__ul">
@@ -314,7 +315,39 @@
               </ul>
             </div>
           </div>
-          <div class="meal__meal">meal</div>
+
+          <!-- Second meal card -->
+          <div class="meal__meal">
+            <img
+              src="resources/images/meals/meal-2.jpg"
+              alt="Avocado Salad"
+              class="meal__img"
+            />
+            <div class="meal__content">
+              <div class="meal__tag-box">
+                <span class="meal__tag meal__tag--vegan">Vegan</span>
+                <span class="meal__tag meal__tag--paleo">Paleo</span>
+              </div>
+              <p class="meal__title">Avocado Salad</p>
+              <ul class="meal__ul">
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
+                  <span> <strong>400</strong> calories </span>
+                </li>
+                <li class="meal__attribute">
+                  <ion-icon
+                    class="meal__icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span> NutriScore &reg; <strong>92</strong> </span>
+                </li>
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                  <span> <strong>4.8</strong> rating (441) </span>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="meal__diet-list">List of diets</div>
         </div>
       </section>
