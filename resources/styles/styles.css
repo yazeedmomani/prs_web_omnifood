@@ -116,6 +116,10 @@
   padding: 9.6rem 0;
 }
 
+.how__txt-box {
+  align-self: center;
+}
+
 .how__step-number {
   font-size: 9.6rem;
   font-weight: 600;
@@ -123,6 +127,45 @@
   margin-bottom: 1.2rem;
 }
 
+.how__dscrp {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+.how__img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.how__img-box::before,
+.how__img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.how__img-box::before {
+  width: 60%;
+  /* I set bottom padding because height doesn't work */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.how__img-box::after {
+  width: 45%;
+  /* I set bottom padding because height doesn't work */
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
 .how__img {
-  width: 50%;
+  width: 35%;
 }

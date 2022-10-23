@@ -91,6 +91,12 @@ body {
   margin-bottom: 9.6rem;
 }
 
+.heading--tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
 .subheading {
   display: block;
   font-size: 1.6rem;
@@ -110,7 +116,8 @@ body {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2-cols {
