@@ -308,6 +308,12 @@
 /* **************************** */
 .tg {
   background-color: #fdf2e9;
+  display: grid;
+  /* 
+  Trick: use fr as a percentage 
+  by giving them numbers that add up to 100 */
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
 }
 
 .tg__testimonial-box {
