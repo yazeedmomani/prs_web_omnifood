@@ -225,3 +225,9 @@
 .meal__attribute {
   font-size: 1.8rem;
 }
+
+.meal__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
