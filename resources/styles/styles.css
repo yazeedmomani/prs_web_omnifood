@@ -209,6 +209,20 @@
   width: 100%;
 }
 
+.meal__tag-box {
+  margin-bottom: 1.2rem;
+}
+
+.meal__tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #51cf66;
+  color: #333;
+  border-radius: 100px;
+}
+
 .meal__title {
   font-size: 2.4rem;
   color: #333;
