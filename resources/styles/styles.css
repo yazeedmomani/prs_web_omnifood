@@ -291,3 +291,8 @@
   height: 3rem;
   color: #e67e22;
 }
+
+.meal__btn-box {
+  text-align: center;
+  font-size: 1.8rem;
+}
