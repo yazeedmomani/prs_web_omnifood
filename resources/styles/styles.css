@@ -307,13 +307,18 @@
 /* TESTIMONIALS AND GALLERY */
 /* **************************** */
 .tg {
-  padding: 9.6rem 0;
+  background-color: #fdf2e9;
+}
+
+.tg__testimonial-box {
+  padding: 9.6rem;
 }
 
 .tg__testimonial-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
 }
 
 .tg__testimonial-img {
@@ -336,6 +341,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
+  padding: 1.6rem;
 }
 
 .tg__gallery-img {
