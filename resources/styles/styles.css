@@ -350,7 +350,16 @@
   padding: 1.6rem;
 }
 
+.tg__gallery-item {
+  overflow: hidden;
+}
+
 .tg__gallery-img {
   display: block;
   width: 100%;
+  transition: all 400ms;
+}
+
+.tg__gallery-img:hover {
+  transform: scale(1.1);
 }
