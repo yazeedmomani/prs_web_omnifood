@@ -70,6 +70,13 @@ body {
   margin-right: 1.6rem !important;
 }
 
+.container {
+    /* Note: you can also use 140rem which is popular */
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+  }
+
 /* **************************** */
 /* GENERAL REUSABLE COMPONENTS */
 /* **************************** */
@@ -105,14 +112,6 @@ body {
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
-}
-
-/* TODO move to helpers */
-.container {
-  /* Note: you can also use 140rem which is popular */
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
 }
 
 .grid {
