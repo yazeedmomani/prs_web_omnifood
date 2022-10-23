@@ -331,3 +331,13 @@
   font-size: 1.6rem;
   color: #777;
 }
+
+.tg__gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tg__gallery-img {
+  display: block;
+  width: 100%;
+}
