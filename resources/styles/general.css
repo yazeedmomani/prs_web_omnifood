@@ -78,6 +78,10 @@ body {
   margin-bottom: 4.8rem !important;
 }
 
+.margin-bottom-lg {
+  margin-bottom: 9.6rem !important;
+}
+
 .container {
   /* Note: you can also use 140rem which is popular */
   max-width: 120rem;
