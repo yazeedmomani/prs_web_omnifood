@@ -475,7 +475,7 @@
 /* CALL TO ACTION */
 /* **************************** */
 .cta {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 
 .cta__grid {
@@ -550,4 +550,81 @@
     url("../images/eating.jpg");
   background-size: cover;
   background-position: center;
+}
+
+/* **************************** */
+/* FOOTER */
+/* **************************** */
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer__grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  grid-template-columns: repeat(2, 1.5fr) repeat(3, 1fr);
+}
+
+.footer__logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer__social-link {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.footer__social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.footer__heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer__address {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.footer__address p:first-child {
+  color: #767676;
+  margin-bottom: 2.4rem;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer__link:link,
+.footer__link:active {
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 300ms;
+}
+
+.footer__link:hover,
+.footer__link:active {
+  color: #555;
 }
