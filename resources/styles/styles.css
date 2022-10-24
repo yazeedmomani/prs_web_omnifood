@@ -285,6 +285,7 @@
   gap: 1.6rem;
 }
 
+/* TODO turn these to a reusable code */
 .meal__diet {
   font-size: 1.8rem;
   display: flex;
