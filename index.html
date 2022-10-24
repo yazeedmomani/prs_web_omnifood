@@ -611,7 +611,7 @@
       <section class="pricing">
         <!-- Heading -->
         <div class="container">
-          <span class="subheading">Meals</span>
+          <span class="subheading">Pricing</span>
           <h2 class="heading heading--secondary">
             Eat well without breaking the bank
           </h2>
@@ -620,12 +620,17 @@
         <div class="container grid grid--2-cols">
           <!-- First Pricing Plan -->
           <div class="pricing__plan">
-            <p class="pricing__name">Starter</p>
-            <p class="pricing__price">
-              <span>$</span>
-              399
-            </p>
-            <p class="pricing__txt">per month. That's just $13 per meal!</p>
+            <!-- Pricing Plan Header -->
+            <header class="pricing__header">
+              <p class="pricing__name">Starter</p>
+              <p class="pricing__price">
+                <span>$</span>
+                399
+              </p>
+              <p class="pricing__txt">per month. That's just $13 per meal!</p>
+            </header>
+
+            <!-- Pricing Plan Main Content -->
             <!-- TODO turn diet list into a reusable code -->
             <ul class="meal__diet-list">
               <li class="meal__diet">
@@ -640,7 +645,7 @@
                   name="checkmark-outline"
                   class="meal__diet-icon"
                 ></ion-icon>
-                <span>Order times are between 11am and 9pm</span>
+                <span>Order from 11am to 9pm</span>
               </li>
               <li class="meal__diet">
                 <ion-icon
@@ -649,18 +654,32 @@
                 ></ion-icon>
                 <span>Delivery is free</span>
               </li>
+              <li class="meal__diet">
+                <ion-icon
+                  name="close-outline"
+                  class="meal__diet-icon"
+                ></ion-icon>
+                <span>Get access to the latest recipes</span>
+              </li>
             </ul>
-            <a href="#" class="btn btn--full">Start eating healthy</a>
+            <div class="pricing__btn-box">
+              <a href="#" class="btn btn--full">Start eating healthy</a>
+            </div>
           </div>
 
           <!-- Second Pricing Plan -->
-          <div class="pricing__plan">
-            <p class="pricing__name">Complete</p>
-            <p class="pricing__price">
-              <span>$</span>
-              649
-            </p>
-            <p class="pricing__txt">per month. That's just $11 per meal!</p>
+          <div class="pricing__plan pricing__plan--promoted">
+            <!-- Pricing Plan Header -->
+            <header class="pricing__header">
+              <p class="pricing__name">Complete</p>
+              <p class="pricing__price">
+                <span>$</span>
+                649
+              </p>
+              <p class="pricing__txt">per month. That's just $11 per meal!</p>
+            </header>
+
+            <!-- Pricing Plan Main Content -->
             <!-- TODO turn diet list into a reusable code -->
             <ul class="meal__diet-list">
               <li class="meal__diet">
@@ -668,14 +687,14 @@
                   name="checkmark-outline"
                   class="meal__diet-icon"
                 ></ion-icon>
-                <span>2 meals per day</span>
+                <span><strong>2 meals</strong> per day</span>
               </li>
               <li class="meal__diet">
                 <ion-icon
                   name="checkmark-outline"
                   class="meal__diet-icon"
                 ></ion-icon>
-                <span>Order 24/7</span>
+                <span>Order <strong>24/7</strong></span>
               </li>
               <li class="meal__diet">
                 <ion-icon
@@ -692,7 +711,9 @@
                 <span>Get access to the latest recipes</span>
               </li>
             </ul>
-            <a href="#" class="btn btn--full">Start eating healthy</a>
+            <div class="pricing__btn-box">
+              <a href="#" class="btn btn--full">Start eating healthy</a>
+            </div>
           </div>
         </div>
       </section>
