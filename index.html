@@ -773,13 +773,57 @@
           <div class="cta__grid">
             <!-- CTA Heading -->
             <div class="cta__content-box">
-              <h2 class="heading--secondary">Get your first meal for free!</h2>
-              <p class="cta__txt">
-                Get your first healthy, tasty, and hassle-free meal for free! Start
-                eating healthy today. You can cancel or pause anytime.
-              </p>
+              <header class="margin-bottom-md">
+                <h2 class="heading--secondary">
+                  Get your first meal for free!
+                </h2>
+                <p class="cta__txt">
+                  Get your first healthy, tasty, and hassle-free meal for free!
+                  Start eating healthy today. You can cancel or pause anytime.
+                </p>
+              </header>
 
               <!-- CTA FORM -->
+              <form action="#" method="POST" class="cta__form">
+                <div>
+                  <label for="full-name">Full Name </label>
+                  <input
+                    type="text"
+                    name="full-name"
+                    id="full-name"
+                    placeholder="John Smith"
+                    required
+                    maxlength="25"
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email Address </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="johnsmith@example.com"
+                    required
+                    maxlength="320"
+                  />
+                </div>
+
+                <div>
+                  <label for="where">Where did you hear from us?</label>
+                  <select name="where" id="where" required>
+                    <option value="">Please choose an option:</option>
+                    <option value="fnf">Friends and Family</option>
+                    <option value="google">Google Search</option>
+                    <option value="youtube">YouTube Ad</option>
+                    <option value="tiktok">TikTok Ad</option>
+                    <option value="instagram">Instagram Ad</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn btn--form">Sign up now!</button>
+              </form>
             </div>
             <div
               class="cta__img"
