@@ -509,6 +509,11 @@
   row-gap: 2.4rem;
 }
 
+.cta__form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
 .cta__form label {
   display: block;
   font-size: 1.6rem;
@@ -531,9 +536,9 @@
   color: #6f6f6f;
 }
 
-.cta__form *:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+.cta__form input:not(:focus):not(:placeholder-shown):invalid {
+  box-shadow: 0 0 0 0.8rem rgb(204, 0, 0, 0.2);
+  color: #c00;
 }
 
 .cta__img {
