@@ -7,11 +7,19 @@
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem #e67e22;
+}
+
 input,
 button,
 textarea,
 select {
   font: inherit;
+  color: inherit;
 }
 
 html {
@@ -152,6 +160,7 @@ strong {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -161,6 +170,8 @@ strong {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   transition: all 300ms;
+  border: none;
+  cursor: pointer;
 }
 
 .btn--full:link,
@@ -183,9 +194,21 @@ strong {
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #fdf2e9;
-
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover,
+.btn--form:active {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
