@@ -618,7 +618,7 @@
 }
 
 .footer__link:link,
-.footer__link:active {
+.footer__link:visited {
   font-size: 1.6rem;
   color: #767676;
   transition: all 300ms;
