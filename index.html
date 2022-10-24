@@ -93,18 +93,23 @@
   <body>
     <!-- Navigation -->
     <nav class="nav">
-      <img
-        src="resources/images/omnifood-logo.png"
-        alt="Omnifood logo"
-        class="nav__logo"
-      />
+      <a href="#">
+        <img
+          src="resources/images/omnifood-logo.png"
+          alt="Omnifood logo"
+          class="nav__logo"
+        />
+      </a>
+
       <div class="nav__list-container">
         <ul class="nav__unordered-list">
-          <li><a class="nav__link" href="#">Section 1</a></li>
-          <li><a class="nav__link" href="#">Section 2</a></li>
-          <li><a class="nav__link" href="#">Section 3</a></li>
-          <li><a class="nav__link" href="#">Section 4</a></li>
-          <li><a class="nav__link nav__link--cta" href="#">Section 5</a></li>
+          <li><a class="nav__link" href="#how">How it works</a></li>
+          <li><a class="nav__link" href="#meal">Meals</a></li>
+          <li><a class="nav__link" href="#tg">Testimonials</a></li>
+          <li><a class="nav__link" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="nav__link nav__link--cta" href="#cta">Try for free</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -121,10 +126,10 @@
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <a href="#" class="btn btn--full margin-right-sm"
+          <a href="#cta" class="btn btn--full margin-right-sm"
             >Start eating healthy</a
           >
-          <a href="#" class="btn btn--outline">Learn more &darr;</a>
+          <a href="#featured" class="btn btn--outline">Learn more &darr;</a>
           <div class="delivered">
             <div class="delivered__img-container">
               <img
@@ -170,7 +175,7 @@
     <!-- Main -->
     <main>
       <!-- Featured -->
-      <section class="featured">
+      <section class="featured" id="featured">
         <div class="container">
           <h2 class="featured__heading">As featured in</h2>
           <div class="featured__logo-box">
@@ -204,7 +209,7 @@
       </section>
 
       <!-- How it works-->
-      <section class="how">
+      <section class="how" id="how">
         <!-- Heading -->
         <div class="container">
           <span class="subheading">How it works</span>
@@ -279,7 +284,7 @@
       </section>
 
       <!-- Meals -->
-      <section class="meal">
+      <section class="meal" id="meal">
         <!-- Heading -->
         <div class="container center-txt">
           <span class="subheading">Meals</span>
@@ -433,7 +438,7 @@
       </section>
 
       <!-- Testimonials and Gallery -->
-      <section class="tg">
+      <section class="tg" id="tg">
         <!-- Testimonials -->
         <div class="tg__testimonial-box">
           <!-- Heading -->
@@ -614,7 +619,7 @@
       </section>
 
       <!-- Pricing -->
-      <section class="pricing">
+      <section class="pricing" id="pricing">
         <!-- Heading -->
         <div class="container">
           <span class="subheading">Pricing</span>
@@ -669,7 +674,7 @@
               </li>
             </ul>
             <div class="pricing__btn-box">
-              <a href="#" class="btn btn--full">Start eating healthy</a>
+              <a href="#cta" class="btn btn--full">Start eating healthy</a>
             </div>
           </div>
 
@@ -718,7 +723,7 @@
               </li>
             </ul>
             <div class="pricing__btn-box">
-              <a href="#" class="btn btn--full">Start eating healthy</a>
+              <a href="#cta" class="btn btn--full">Start eating healthy</a>
             </div>
           </div>
         </div>
@@ -768,7 +773,7 @@
       </section>
 
       <!-- Call to Action -->
-      <section class="cta">
+      <section class="cta" id="cta">
         <div class="container">
           <div class="cta__grid">
             <!-- CTA Heading -->
@@ -840,7 +845,98 @@
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="footer">
+      <div class="container footer__grid">
+        <!-- First Column -->
+        <div class="footer__logo-col">
+          <a href="#" class="footer__logo">
+            <img
+              src="resources/images/omnifood-logo.png"
+              alt="Omnifood logo"
+              class="nav__logo"
+            />
+          </a>
+
+          <ul class="footer__social-link">
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon
+                  class="footer__social-icon"
+                  name="logo-instagram"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon
+                  class="footer__social-icon"
+                  name="logo-facebook"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon
+                  class="footer__social-icon"
+                  name="logo-twitter"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <p class="footer__copyright">
+            Copyright &copy; 2022 Omnifood, Inc. All rights reserved.
+          </p>
+        </div>
+
+        <!-- Second Column -->
+        <div class="footer__address-col">
+          <p class="footer__heading">Contact us</p>
+          <address class="footer__address">
+            <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <p>
+              <a class="footer__link" href="tel:+14152016370">+1-415-201-6370</a
+              ><br />
+              <a class="footer__link" href="mailto:hello@omnifood.com"
+                >hello@omnifood.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <!-- Third Column -->
+        <nav class="footer__nav-col">
+          <p class="footer__heading">Account</p>
+          <ul class="footer__nav">
+            <li><a class="footer__link" href="#">Create account</a></li>
+            <li><a class="footer__link" href="#">Sign in</a></li>
+            <li><a class="footer__link" href="#">IOS app</a></li>
+            <li><a class="footer__link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <!-- Fourth Column -->
+        <nav class="footer__nav-col">
+          <p class="footer__heading">Company</p>
+          <ul class="footer__nav">
+            <li><a class="footer__link" href="#">About Omnifood</a></li>
+            <li><a class="footer__link" href="#">For business</a></li>
+            <li><a class="footer__link" href="#">Cooking partners</a></li>
+            <li><a class="footer__link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <!-- Fifth Column -->
+        <nav class="footer__nav-col">
+          <p class="footer__heading">Resources</p>
+          <ul class="footer__nav">
+            <li><a class="footer__link" href="#">Recipe directory</a></li>
+            <li><a class="footer__link" href="#">Help center</a></li>
+            <li><a class="footer__link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
     <!-- Scripts -->
     <!-- For Icons -->
