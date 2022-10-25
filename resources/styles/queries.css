@@ -5,10 +5,92 @@ because rem is bugged.
 */
 
 /* **************************** */
-/* BELOW 1344px */
+/* BELOW 1376px */
 /* **************************** */
-@media (max-width: 84em) {
+@media (max-width: 86em) {
   .hero__container {
     max-width: 120rem;
   }
+
+  .heading--primary {
+    font-size: 4.4rem;
+  }
+
+  .tg__testimonial-box {
+    padding: 4.8rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 1312px */
+/* **************************** */
+@media (max-width: 82em) {
+  .tg__testimonial-box .heading--secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .tg__testimonial-box {
+    padding: 3.2rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 1248px */
+/* **************************** */
+@media (max-width: 78em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid{
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .nav__unordered-list{
+    gap: 3.2rem;
+  }
+  
+  .hero__container{
+    column-gap: 4.8rem;
+  }
+
+  .tg__testimonial-box .heading--secondary {
+    margin-bottom: 9.6rem;
+  }
+
+  .heading--secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading--tertiary {
+    font-size: 2.4rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 1120px */
+/* **************************** */
+@media (max-width: 70em) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+/* **************************** */
+/* BELOW 1008px */
+/* **************************** */
+@media (max-width: 63em) {
+    html {
+      font-size: 43.75%;
+    }
+}
+
+/* **************************** */
+/* BELOW 880px */
+/* **************************** */
+@media (max-width: 55em) {
+    html {
+      font-size: 37.5%;
+    }
 }
