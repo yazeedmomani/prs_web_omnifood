@@ -1,4 +1,14 @@
 /* 
-Remember: In media queries, 1rem = 1em = 16px.
-Remember: Use em instead of rem in media queries because rem is bugged.
+Remember: max-width and min-width in media queries, 1rem = 1em = 16px.
+Remember: Use em instead of rem for max-width and min-width in media queries
+because rem is bugged.
 */
+
+/* **************************** */
+/* BELOW 1344px */
+/* **************************** */
+@media (max-width: 84em) {
+  .hero__container {
+    max-width: 120rem;
+  }
+}
