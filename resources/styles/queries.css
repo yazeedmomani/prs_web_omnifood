@@ -42,16 +42,16 @@ because rem is bugged.
     font-size: 56.25%;
   }
 
-  .grid{
+  .grid {
     column-gap: 4.8rem;
     row-gap: 6.4rem;
   }
 
-  .nav__unordered-list{
+  .nav__unordered-list {
     gap: 3.2rem;
   }
-  
-  .hero__container{
+
+  .hero__container {
     column-gap: 4.8rem;
   }
 
@@ -72,25 +72,119 @@ because rem is bugged.
 /* BELOW 1120px */
 /* **************************** */
 @media (max-width: 70em) {
-    html {
-      font-size: 50%;
-    }
+  html {
+    font-size: 50%;
   }
+}
 
 /* **************************** */
 /* BELOW 1008px */
 /* **************************** */
 @media (max-width: 63em) {
-    html {
-      font-size: 43.75%;
-    }
+  html {
+    font-size: 43.75%;
+  }
 }
 
 /* **************************** */
 /* BELOW 880px */
 /* **************************** */
 @media (max-width: 55em) {
-    html {
-      font-size: 37.5%;
+  html {
+    font-size: 37.5%;
+  }
+}
+
+/* **************************** */
+/* BELOW 752px */
+/* **************************** */
+@media (max-width: 47em) {
+    .grid--2-cols,
+    .grid--3-cols {
+        grid-template-columns: 1fr;
+        row-gap: 9.6rem;
+    }
+    
+    .grid--4-cols{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .nav {
+        padding: 0 3.2rem;
+    }
+
+    .hero__container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__img-box {
+        display: none;
+    }
+
+    .delivered{
+        margin-top: 4.8rem;
+    }
+
+    .featured__heading{
+        margin-bottom: 9.6rem;
+    }
+
+    .featured__logo-box{
+        flex-direction: column;
+        align-items: center;
+        gap: 4.8rem;
+    }
+
+    .how__txt-box--second{
+        grid-row: 3 / 4;
+    }
+
+    .tg__testimonial-box .heading--secondary {
+        margin-bottom: 4.8rem;
+    }
+    
+    .tg__testimonial-grid {
+        column-gap: 2.4rem;
+    }
+
+    .tg{
+        grid-template-columns: 1fr;
+        row-gap: 2.4rem;
+    }
+
+    .tg__gallery-grid{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .pricing__plan {
+        justify-self: center !important;
+        width: 40%;
+    }
+
+    .footer__grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__address-col {
+        grid-column: 2 / 4;
+    }
+}
+
+/* **************************** */
+/* BELOW 592px */
+/* **************************** */
+@media (max-width: 37em) {
+    .nav{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav__logo{
+        margin-top: 3.6rem;
+    }
+
+    .nav__unordered-list {
+        display: none;
     }
 }
