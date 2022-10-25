@@ -17,7 +17,7 @@
 .nav__unordered-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: baseline;
 }
 
