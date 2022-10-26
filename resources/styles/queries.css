@@ -207,4 +207,9 @@ because rem is bugged.
     .cta__img {
       display: none;
     }
+
+    .footer__grid{
+      row-gap: 6.4rem;
+      column-gap: 4.8rem;
+    }
 }
