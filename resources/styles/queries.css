@@ -180,11 +180,31 @@ because rem is bugged.
         height: auto;
     }
 
-    .nav__logo{
+    .nav .nav__logo{
         margin-top: 3.6rem;
     }
 
     .nav__unordered-list {
         display: none;
+    }
+
+    .tg__gallery-grid {
+      display: none;
+    }
+
+    .pricing__plan{
+      width: 100%;
+    }
+
+    .pricing__plan--promoted::after {
+      right: -13%;
+    }
+
+    .cta__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta__img {
+      display: none;
     }
 }
