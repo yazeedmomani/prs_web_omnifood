@@ -1,6 +1,16 @@
 /* **************************** */
 /* NAVIGATION */
 /* **************************** */
+html {
+  /* for mobile nav */
+  overflow-x: hidden;
+}
+
+body {
+  /* for mobile nav */
+  overflow-x: hidden;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -52,7 +62,7 @@
 /* MOBILE */
 .nav__mobile-nav-btn {
   border: none;
-  background-color: #fdf2e9;
+  background-color: transparent;
   cursor: pointer;
   display: none;
 }
@@ -63,7 +73,7 @@
   color: #333;
 }
 
-.nav__mobile-nav-btn-icon[name="close-outline"]{
+.nav__mobile-nav-btn-icon[name="close-outline"] {
   display: none;
 }
 

@@ -99,117 +99,155 @@ because rem is bugged.
 /* BELOW 752px */
 /* **************************** */
 @media (max-width: 47em) {
-    .grid--2-cols,
-    .grid--3-cols {
-        grid-template-columns: 1fr;
-        row-gap: 9.6rem;
-    }
-    
-    .grid--4-cols{
-        grid-template-columns: 1fr 1fr;
-        
-    }
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+    row-gap: 9.6rem;
+  }
 
-    .nav {
-        padding: 0 3.2rem;
-    }
+  .grid--4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .hero__container {
-        grid-template-columns: 1fr;
-    }
+  .nav {
+    padding: 0 3.2rem;
+  }
 
-    .hero__img-box {
-        display: none;
-    }
+  .hero__container {
+    grid-template-columns: 1fr;
+  }
 
-    .delivered{
-        margin-top: 4.8rem;
-    }
+  .hero__img-box {
+    display: none;
+  }
 
-    .featured__heading{
-        margin-bottom: 9.6rem;
-    }
+  .delivered {
+    margin-top: 4.8rem;
+  }
 
-    .featured__logo-box{
-        flex-direction: column;
-        align-items: center;
-        gap: 4.8rem;
-    }
+  .featured__heading {
+    margin-bottom: 9.6rem;
+  }
 
-    .how__txt-box--second{
-        grid-row: 3 / 4;
-    }
+  .featured__logo-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+  }
 
-    .tg__testimonial-box .heading--secondary {
-        margin-bottom: 4.8rem;
-    }
-    
-    .tg__testimonial-grid {
-        column-gap: 2.4rem;
-    }
+  .how__txt-box--second {
+    grid-row: 3 / 4;
+  }
 
-    .tg{
-        grid-template-columns: 1fr;
-        row-gap: 2.4rem;
-    }
+  .tg__testimonial-box .heading--secondary {
+    margin-bottom: 4.8rem;
+  }
 
-    .tg__gallery-grid{
-        grid-template-columns: repeat(6, 1fr);
-    }
+  .tg__testimonial-grid {
+    column-gap: 2.4rem;
+  }
 
-    .pricing__plan {
-        justify-self: center !important;
-        width: 40%;
-    }
+  .tg {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
 
-    .footer__grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .tg__gallery-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
 
-    .footer__address-col {
-        grid-column: 2 / 4;
-    }
+  .pricing__plan {
+    justify-self: center !important;
+    width: 40%;
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__address-col {
+    grid-column: 2 / 4;
+  }
 }
 
 /* **************************** */
 /* BELOW 592px */
 /* **************************** */
 @media (max-width: 37em) {
-    .nav{
-        flex-direction: column;
-        height: auto;
-    }
+  .nav {
+    position: relative;
+  }
 
-    .nav .nav__logo{
-        margin-top: 3.6rem;
-    }
+  .nav__unordered-list {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    transform: translatex(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.8rem;
+    transition: all 500ms ease-in;
+    /* Hide it visually */
+    opacity: 0;
+    /* Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* Hide it from screen readers */
+    visibility: hidden;
+  }
 
-    .nav__unordered-list {
-        display: none;
-    }
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 3rem;
+  }
 
-    .tg__gallery-grid {
-      display: none;
-    }
+  .nav__mobile-nav-btn {
+    display: block;
+    z-index: 20;
+  }
 
-    .pricing__plan{
-      width: 100%;
-    }
+  .nav--open .nav__unordered-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translatex(0);
+  }
 
-    .pricing__plan--promoted::after {
-      right: -13%;
-    }
+  .nav--open .nav__mobile-nav-btn-icon[name="close-outline"] {
+    display: block;
+  }
 
-    .cta__grid {
-      grid-template-columns: 1fr;
-    }
+  .nav--open .nav__mobile-nav-btn-icon[name="menu-outline"] {
+    display: none;
+  }
 
-    .cta__img {
-      display: none;
-    }
+  .tg__gallery-grid {
+    display: none;
+  }
 
-    .footer__grid{
-      row-gap: 6.4rem;
-      column-gap: 4.8rem;
-    }
+  .pricing__plan {
+    width: 100%;
+  }
+
+  .pricing__plan--promoted::after {
+    right: -13%;
+  }
+
+  .cta__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta__img {
+    display: none;
+  }
+
+  .footer__grid {
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
 }
