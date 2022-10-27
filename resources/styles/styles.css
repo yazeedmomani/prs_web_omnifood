@@ -4,6 +4,7 @@
 html {
   /* for mobile nav */
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
